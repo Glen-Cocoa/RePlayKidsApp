@@ -1,6 +1,6 @@
 var record = function (){
 	this.id = 0,
-	this.toyName=[],
+	this.toyName='',
 	this.toyType="",
 	this.manufacturer="",
 	this.photo="",
