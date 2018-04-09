@@ -6,8 +6,10 @@ function init() {
 function test(data){
   var database=data
   console.log('this is a test function',data)
+  $('#target').append(data)
   // after one works.  the for loop will be record[i]=createRecord[i]
   var record = createRecord(database[0])  
+  
 }
 function createRecord(tableRow){
   var newRecord = {}
@@ -26,6 +28,7 @@ function createObjectKeys(tableRow)
         }
   keyArray[i]=keyArray[i].replace(/ /g,"_")
   console.log(keyArray[i])
+   
   }
  }
 window.addEventListener('DOMContentLoaded', init)
