@@ -22,8 +22,8 @@ function createObjectKeys(tableRow)
 {
   var keyArray = Object.keys(tableRow)
   for (var i = 0 ; i< keyArray.length-1;i++){
-   if (keyArray[i][keyArray.lenght-1]==='r'){
-   //keyArray[i].trim()
+   while(keyArray[i].endsWith(" ")||keyArray[i].startsWith(" ")){
+       keyArray[i]= keyArray[i].replace(/^\s+|\s+$/gm,'')
        console.log('this entered the loop')
         }
   keyArray[i]=keyArray[i].replace(/ /g,"_")
