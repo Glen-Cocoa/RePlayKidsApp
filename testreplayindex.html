@@ -3,25 +3,28 @@
   <head>
   
 
-    <script type="text/javascript" src="testreplayapp.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-<script type='text/javascript'>    
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1dtMUq0qZvXBkplP2w-zleMOYxjyY6M7YcDwlz8uZS1k/edit?ts=5ab98793#gid=0';
-
-  function init() {
-    Tabletop.init( { key: publicSpreadsheetUrl,
-                     callback: showInfo,
-                     simpleSheet: true } )
-  }
-
-  function showInfo(data, tabletop) {
-    alert('Successfully processed!')
-    console.log(data);
-  }
-
-  window.addEventListener('DOMContentLoaded', init)
-</script>
+    <script  src="testreplayapp.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
   </head>
-  TESTING
+  <body>
+  REPLAY 
+    
+   <div id="target">
+    </div>
+    
+    <div id="toyName">
+    </div>
+    
+    <div id="type">
+    </div>
+    
+    <div id="instructions">
+    </div>
+    
+    <div id="output">
+    </div>
+  </body>
+
 </html>
