@@ -1,3 +1,6 @@
+var constructTableData =(function(){
+   
+
 function renameRecords(singleRecord){
   this.toyName = singleRecord['Toy name'],
   this.toyType = singleRecord[" Toy Type"],
@@ -8,19 +11,26 @@ function renameRecords(singleRecord){
 //new renameRecords()
 
 function makeList(list){
-  newList=[]
+  var newList=[]
 for (var i = 0; i < list.length; i++){
   let nRec = new renameRecords(list[i])
   newList.push(nRec)
 }
+  console.log(newList)
   return newList
 }
 
-makeList(arrayOfRecords)
-console.log(newList)
-
-
-let updatedList = makeList(arrayOfRecords)
+console.log(resultArray)
+let updatedList = makeList(resultArray)
 console.log(updatedList)
 
-
+  var module = {
+    'renameRecords': renameRecords,
+    'makeList': makeList
+  }
+  
+  return module
+  console.log(module)
+  
+  
+})();
