@@ -1,3 +1,4 @@
+var parseFile =(function(){
 function init() {
   Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1dtMUq0qZvXBkplP2w-zleMOYxjyY6M7YcDwlz8uZS1k/edit?ts=5ab98793#gid=0',
                    callback: test ,
@@ -10,6 +11,15 @@ function test(data){
   console.log('this is the data',configObj)
     return arrayOfRecords
 }
- 
-window.addEventListener('DOMContentLoaded', init)
 
+  
+  var module = {
+    'init':init,
+    'test':test
+  
+  }
+  
+  return module
+  console.log(module)
+
+})();
