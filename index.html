@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
- <link rel="stylesheet" media="all" href="vendor/bootstrap/css/jquery.dynatable.css" />
- 
-  <script src="vendor/bootstrap/js/jquery.dynatable.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  
+  
+  <!-- Bootstrap core JavaScript -->
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" media="all" href="vendor/bootstrap/css/jquery.dynatable.css" />
+ <script  src="testreplayapp.js"></script>
+  <script  src="table/objectconstructor.js"></script>
+  <script  src="table/postdatatotable.js"></script>
+  <script src="jquery.dynatable.js"></script>
+<link rel="stylesheet" media="all" href="jquery.dynatable.css" />
+ 
   <head>
 
     <meta charset="utf-8">
@@ -105,29 +122,5 @@
   </tbody>
 </table>
   
-  <id id="data">[
- {
-    "toyName": "John ",
-    "toyType": "Testing Scorcho",
-    "instructions": "John",
-    "sensoryOutput": "John"
-  },
-  {
-    "band": "Chevelle",
-    "song": "Family System"
-  }
-]
-  </id>
-  <script>
   
-var $records = $('#data'),
-    myRecords = JSON.parse($records.text());
-$('#my-final-table').dynatable({
-  dataset: {
-    records: myRecords
-  }
-});   
-  </script>
-
-
 </html>
