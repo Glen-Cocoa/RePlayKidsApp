@@ -1,6 +1,6 @@
 var constructTableData =(function(){
    
-
+//Takes imported data and renames headers to integrate properly with Dyna Table
 function renameRecords(singleRecord){
   this.toyName = singleRecord['Toy name'],
   this.toyType = singleRecord[" Toy Type"],
@@ -10,6 +10,7 @@ function renameRecords(singleRecord){
 
 //new renameRecords()
 
+  // Goes through list renames keys using prior function
 function makeList(list){
   var newList=[]
 for (var i = 0; i < list.length; i++){
@@ -34,3 +35,11 @@ console.log(updatedList)
   
   
 })();
+
+var records = updatedList
+    myRecords = JSON.parse($records.text());
+$('#my-final-table').dynatable({
+  dataset: {
+    records: myRecords
+  }
+});   
