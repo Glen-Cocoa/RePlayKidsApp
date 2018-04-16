@@ -1,60 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  
-  
-  <!-- Bootstrap core JavaScript -->
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <link rel="stylesheet" media="all" href="vendor/bootstrap/css/jquery.dynatable.css" />
- <script  src="testreplayapp.js"></script>
-  <script  src="table/objectconstructor.js"></script>
-  <script  src="table/postdatatotable.js"></script>
-  <script src="jquery.dynatable.js"></script>
-<link rel="stylesheet" media="all" href="jquery.dynatable.css" />
- 
-  <head>
-
-    <meta charset="utf-8">
+  <head> 
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Bare - Start Bootstrap Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
-
-    </style>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="jquery.dynatable.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="jquery.dynatable.js"></script>
+<script src="testreplayapp.js"></script>
+<script src="table/objectconstructor.js"></script>
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
       <div class="container">
         <a class="navbar-brand" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,49 +43,45 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
 
     
-
-    
-  </body>
-  
-  <style>
-    table {
-      border: solid 1px #ccc;    border-collapse: collapse;
-      border-spacing: 0;
-      position: relative; /* Add positioning */
-    }
-    td, th {
-      border-bottom: solid 1px #eee;
-      border-top: solid 1px #ccc;
-      border-left: solid 1px #eee;
-      border-right: solid 1px #ccc;
-      padding: 10px 15px;
-    }
-    th {
-      background: #eee;
-    }
-    #example-ul, #ajax-ul {
-      display: block;
-      margin-top: 30px;
-      border: solid 1px #ccc;
-    }
-
-  </style>
-  
-    <table id="my-final-table">
+   <table id="my-final-table">
   <thead>
     <th>Toy Name</th>
     <th>Toy Type</th>
     <th>Instructions</th>
     <th>Sensory Output</th>
-    
-  </thead>
-  <tbody>
+     </thead>
+  
+     <tbody>
   </tbody>
 </table>
+            </div>
+
+   <id id="data">[
+ {
+    "toyName": "John ",
+    "toyType": "Testing Scorcho",
+    "instructions": "John",
+    "sensoryOutput": "John"
+  },
+  {
+    "band": "Chevelle",
+    "song": "Family System"
+  }
+]
+  </id>
+    </body>
+
+  <script>
   
-  
+var $records = $('#data'),
+    myRecords = JSON.parse($records.text());
+$('#my-final-table').dynatable({
+  dataset: {
+    records: myRecords
+  }
+});   
+  </script>
 </html>

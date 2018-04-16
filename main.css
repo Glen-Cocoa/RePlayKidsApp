@@ -1,0 +1,30 @@
+body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+table{
+      border: solid 1px #ccc;    border-collapse: collapse;
+      border-spacing: 0;
+  margin-top: 80px;    
+    display:block;
+    }
+    td, th {
+      border-bottom: solid 1px #eee;
+      border-top: solid 1px #ccc;
+      border-left: solid 1px #eee;
+      border-right: solid 1px #ccc;
+      padding: 10px 15px;
+    }
+    th {
+      background: #eee;
+    }
+    #example-ul, #ajax-ul {
+      display: block;
+      margin-top: 30px;
+      border: solid 1px #ccc;
+    }
