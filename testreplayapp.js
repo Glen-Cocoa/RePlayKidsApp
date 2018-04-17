@@ -16,25 +16,39 @@ var parseFile =(function(){
    // return arrayOfRecords
   //}
   var ConfigObj = function(callback){
-    //this.recordArray=[]
     var _this = this;
+    
     this.getData = function (file,callback){
       Tabletop.init( { key: KEY,
       callback: callback,
       simpleSheet: true } )
     }
-    this.storeData= function(data){
+    
+    this.storeData = function(data) {  
       console.log("this is the data",data)
-      _this.recordArray=[]
-      _this.recordArray=data
+      _this.recordArray = []
+      _this.recordArray = data
       console.log("this is in the loop",this)
       console.log(_this.recordArray)
       callback(_this)
-      }
-    this.getData(KEY,this.storeData)
+    }
     
+    this.filteredData = function() {
+      var arr = [];
+      for(var i = 0; i < _this.recordArray.length; i++) {
+        var originalObj = _this.recordArray[i];
+        arr.push({
+          'Toy name': originalObj['Toy name'],
+          'Toy type': originalObj['Toy type'],
+          'Instructions': originalObj['Instructions'],
+          'Sensory output': originalObj['Sensory output']
+        });
+      }
+      return arr;
+    }
+    
+    this.getData(KEY,this.storeData)
   }
-
   
   
   /* function getSpecs(array){
