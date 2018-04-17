@@ -1,35 +1,43 @@
 var KEY = 'https://docs.google.com/spreadsheets/d/1dtMUq0qZvXBkplP2w-zleMOYxjyY6M7YcDwlz8uZS1k/edit?ts=5ab98793#gid=0'
 var parseFile =(function(){
-  function init() {
-    Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1dtMUq0qZvXBkplP2w-zleMOYxjyY6M7YcDwlz8uZS1k/edit?ts=5ab98793#gid=0',
-                   callback: test ,
-                   simpleSheet: true } )
-  }
+ // function init() {
+    //Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1dtMUq0qZvXBkplP2w-zleMOYxjyY6M7YcDwlz8uZS1k/edit?ts=5ab98793#gid=0',
+      //             callback: test ,
+        //           simpleSheet: true } )
+  //}
 
-  function test(data){
-    var arrayOfRecords=data
+  //function test(data){
+    //var arrayOfRecords=data
   
 
     //  var configObj= function(){
     // this.arrayOfRecords = arrayOfRecords
-    console.log('this is the data',arrayOfRecords)
-    return arrayOfRecords
-  }
+   // console.log('this is the data',arrayOfRecords)
+   // return arrayOfRecords
+  //}
   var ConfigObj = function(callback){
+    //this.recordArray=[]
+    var _this = this;
     this.getData = function (file,callback){
-      Tabletop.init( { key: file,
+      Tabletop.init( { key: KEY,
       callback: callback,
       simpleSheet: true } )
     }
     this.storeData= function(data){
-      this.recordArray=data
-      callback(this)
+      console.log("this is the data",data)
+      _this.recordArray=[]
+      _this.recordArray=data
+      console.log("this is in the loop",this)
+      console.log(_this.recordArray)
+      callback(_this)
       }
     this.getData(KEY,this.storeData)
     
   }
 
-   function getSpecs(array){
+  
+  
+  /* function getSpecs(array){
      var arrayOfRecords = arrayOfRecords
      
      var teamObj = {}
@@ -42,15 +50,12 @@ var parseFile =(function(){
      console.log(teamObj+":"+Object.values[i])
      }
      return teamObj
-   }
+   }  */
 // window.addEventListener('DOMContentLoaded', init)
 
  
   var module = {
-    'init':init,
-    'test':test,
-    'getSpecs':getSpecs,
-    'configObj':configObj
+ 'ConfigObj':ConfigObj
  }
   
   return module
