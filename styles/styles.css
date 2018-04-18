@@ -48,3 +48,10 @@ vertical-align: top;
 height: 50px;
 width: 75px;
 }
+
+
+#my-final-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
