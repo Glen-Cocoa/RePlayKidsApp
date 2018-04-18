@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="jquery.dynatable.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="jquery.dynatable.js"></script>
+<script src="testreplayapp.js"></script>
+<script src="table/objectconstructor.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="https://replayforkids.org/images/RePlayLogo/RFK-logo.jpg" id="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>            
+         </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donate Now</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+   <table id="my-final-table">
+  <thead>
+    <th>Toy Name</th>
+    <th>Toy Type</th>
+    <th>Instructions</th>
+    <th>Sensory Output</th>
+     </thead>
+  
+     <tbody>
+  </tbody>
+</table>
+            </div>
+
+   <id id="data">[
+ {
+    "toyName": "Tickle Me Elmo ",
+    "toyType": "Stuffed Animal",
+    "instructions": "CLICK HERE",
+    "sensoryOutput": "Touch"
+  },
+ {
+    "toyName": "RC Race Car ",
+    "toyType": "Remote Controlled Car",
+    "instructions": "CLICK HERE",
+    "sensoryOutput": "Controller Operated"
+  },
+ {
+    "toyName": "Fisher Price Guitar",
+    "toyType": "Musical Instrument",
+    "instructions": "CLICK HERE",
+    "sensoryOutput": "Sound"
+  },
+ {
+    "toyName": "See And Say ",
+    "toyType": "Musical",
+    "instructions": "CLICK HERE",
+    "sensoryOutput": "Sound/Visual"
+  }
+   ]
+  </id>
+    </body>
+
+  <script>
+  
+var $records = $('#data'),
+    myRecords = JSON.parse($records.text());
+$('#my-final-table').dynatable({
+  dataset: {
+    records: myRecords
+  }
+});   
+  </script>
+</html>
