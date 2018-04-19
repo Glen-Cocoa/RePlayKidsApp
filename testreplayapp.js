@@ -25,7 +25,19 @@ var parseFile =(function(){
           "name": originalObj["Toy name"],
           "type": originalObj["Toy Type"],
           "instructions": originalObj["Instructions"],
-          "sensory": originalObj["Sensory output type"]
+          "sensory": originalObj["Sensory output type"],
+          "manufacturer": originalObj["Manufacturer"],
+          "photo": originalObj["Photo"],
+          "instruction format": originalObj["Instruction Format"],
+          "toyType": originalObj["Toy Type"],
+          "switchConnectionLocation": originalObj["Switch connection location"],
+          "adaptingGrouporPerson": originalObj["Adapting Group or Person"],
+          "keywords": originalObj["Keywords"],
+          "summary": originalObj["Summary"],
+          "difficultyLevel": originalObj["Difficulty Level"],
+          "comments": originalObj["Comments"],
+        
+          
         });
       }
       return arr;
