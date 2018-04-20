@@ -15,4 +15,8 @@ $(function(){
       console.log('done')
     })
   }, 2000)
+	$('tr').hover(function(){
+    $(this).attr("src",this.children[4].innerHTML)
+    console.log($(this).attr("src"))
+})
 })
