@@ -1,0 +1,40 @@
+body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+			
+			/* styles for the detail page */
+			#toyImage {
+				padding-bottom: 10px;	
+			}
+			
+			.panel-title {
+				font-size: 14px;
+				font-weight: 400;
+				margin-right: 5px;
+			}
+			
+			.panel-title > i{
+				margin-right: 5px;
+			}
+			
+			.panel-body {
+				font-size: 16px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			
+			#summary {
+				font-size: 14px;
+				font-weight: 400;
+				margin-bottom: 10px;
+				text-transform: none;
+			}
+			
+			#disqus {
+				margin-top: 30px;
+			}
