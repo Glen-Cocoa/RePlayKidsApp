@@ -1,56 +1,65 @@
 var KEY = 'https://docs.google.com/spreadsheets/d/1dtMUq0qZvXBkplP2w-zleMOYxjyY6M7YcDwlz8uZS1k/edit?ts=5ab98793#gid=0'
+
 var parseFile =(function(){
-  function init() {
-    Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1dtMUq0qZvXBkplP2w-zleMOYxjyY6M7YcDwlz8uZS1k/edit?ts=5ab98793#gid=0',
-                   callback: test ,
-                   simpleSheet: true } )
-  }
-
-  function test(data){
-    var arrayOfRecords=data
-  
-
-    //  var configObj= function(){
-    // this.arrayOfRecords = arrayOfRecords
-    console.log('this is the data',arrayOfRecords)
-    return arrayOfRecords
-  }
   var ConfigObj = function(callback){
+    var _this = this;
+    
     this.getData = function (file,callback){
-      Tabletop.init( { key: file,
+      Tabletop.init( { key: KEY,
       callback: callback,
       simpleSheet: true } )
     }
-    this.storeData= function(data){
-      this.recordArray=data
-      callback(this)
-      }
-    this.getData(KEY,this.storeData)
     
+    this.storeData = function(data) {  
+      data=cleanData(data)
+      _this.recordArray = []
+      _this.recordArray = data
+      callback(_this)
+    }
+    
+    this.filteredData = function() {
+      var arr = [];
+      for(var i = 0; i < _this.recordArray.length; i++) {
+        var originalObj = _this.recordArray[i];
+        arr.push({
+          "name": originalObj["Toy name"],
+          "type": originalObj["Toy Type"],
+          "instructions": originalObj["Instructions"],
+          "sensory": originalObj["Sensory output type"],
+          "manufacturer": originalObj["Manufacturer"],
+          "photo": originalObj["Photo"],
+          "instruction format": originalObj["Instruction Format"],
+          "toyType": originalObj["Toy Type"],
+          "switchConnectionLocation": originalObj["Switch connection location"],
+          "adaptingGrouporPerson": originalObj["Adapting Group or Person"],
+          "keywords": originalObj["Keywords"],
+          "summary": originalObj["Summary"],
+          "difficultyLevel": originalObj["Difficulty Level"],
+          "comments": originalObj["Comments"],
+        
+          
+        });
+      }
+      return arr;
+    }
+    
+    this.getData(KEY,this.storeData)
+  }
+  var cleanData= function(data){
+    var goodArray=[]
+    for (var i = 0;i<data.length;i++){
+    var good_obj={}
+    var key_value=Object.keys(data[i])
+    for (var j= 0;j<key_value.length;j++){
+    good_obj[key_value[j].trim()]=data[i][key_value[j]].trim()
+    }
+   goodArray.push(good_obj)
+    }
+    return goodArray
   }
 
-   function getSpecs(array){
-     var arrayOfRecords = arrayOfRecords
-     
-     var teamObj = {}
-          
-     for (var i = 0; i< array.length; i++){
-       for( var j = 0; j < Object.keys.length; j++)
-       if (array === Object.keys[j] )
-        var newKeyValue = {}
-       Object.assign(teamObj,newKeyValue)
-     console.log(teamObj+":"+Object.values[i])
-     }
-     return teamObj
-   }
-// window.addEventListener('DOMContentLoaded', init)
-
- 
   var module = {
-    'init':init,
-    'test':test,
-    'getSpecs':getSpecs,
-    'configObj':configObj
+ 'ConfigObj':ConfigObj
  }
   
   return module
