@@ -6,8 +6,14 @@ body {
 			padding-top: 0px;
 			padding-bottom: 20px;
 		}
+    #my-final-table{
+      width:100% !IMPORTANT;
+    }
 	}
-
+#tableRow{
+  margin:0px 15px;
+  
+}
 .navbar {
 	border-radius: 0px;
 	min-height: 82px;
@@ -24,7 +30,6 @@ table {
 	margin-top: 30px;
 	margin-right: 10px;
 	margin-left: 10px;
-	display:block;
 }
 
 td, th {
@@ -37,6 +42,9 @@ td, th {
 
 th {
 	background: #001ba2;
+}
+#donateBtn{
+  float:right;
 }
 
 #example-ul, #ajax-ul {
@@ -54,7 +62,7 @@ th {
 }
 
 #dynatable-query-search-my-final-table {
-  margin-right: 100px;
+  
 }
 
 .bg-dark {
@@ -70,6 +78,7 @@ th {
 
 #my-final-table tr:nth-child(even) {
     background-color: #c6c6c6;
+    width:100%;
 }
 
 
