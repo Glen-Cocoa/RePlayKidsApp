@@ -19,8 +19,9 @@ body {
 	min-height: 82px;
 }
 
-a {
-	color: #001ba2;
+
+.navbar a,.navbar a:hover {
+	color: #ffffff;
 }
 
 table {
@@ -43,6 +44,7 @@ td, th {
 th {
 	background: #001ba2;
 }
+
 #donateBtn{
   float:right;
 }
@@ -75,14 +77,15 @@ th {
 
 #logo { 
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	height: 50px;
 	width: 75px;
+	margin-right: 7px;
 }
 
 #my-final-table tr:nth-child(even) {
-    background-color: #c6c6c6;
-    width:100%;
+  background-color: #c6c6c6;
+  width:100%;
 }
 
 
@@ -107,8 +110,8 @@ th {
 
 .panel-default > .panel-heading {
 	background-image: none;
-	background-color: #31458229;
-	color: #2260a5db;
+	background-color: #5d73b336;
+	color: #49494b;
 }
 
 .panel-title {
