@@ -30,5 +30,4 @@ let data2 = new parseFile.ConfigObj(function(data){
     });
   
     console.log(data.recordArray[0].Photo)
-})
-
+});

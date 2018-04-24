@@ -6,21 +6,16 @@ body {
 			padding-top: 0px;
 			padding-bottom: 20px;
 		}
-    #my-final-table{
-      width:100% !IMPORTANT;
-    }
 	}
-#tableRow{
-  margin:0px 15px;
-  
-}
+
 .navbar {
 	border-radius: 0px;
 	min-height: 82px;
 }
 
-a {
-	color: #001ba2;
+
+.navbar a,.navbar a:hover {
+	color: #ffffff;
 }
 
 table {
@@ -30,6 +25,7 @@ table {
 	margin-top: 30px;
 	margin-right: 10px;
 	margin-left: 10px;
+	display:block;
 }
 
 td, th {
@@ -42,9 +38,6 @@ td, th {
 
 th {
 	background: #001ba2;
-}
-#donateBtn{
-  float:right;
 }
 
 #example-ul, #ajax-ul {
@@ -61,12 +54,8 @@ th {
 	background: #001ba2;
 }
 
-#dynatable-processing-my-final-table{
-	min-width: 100% !important;
-}
-
 #dynatable-query-search-my-final-table {
-  
+  margin-right: 100px;
 }
 
 .bg-dark {
@@ -75,14 +64,15 @@ th {
 
 #logo { 
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	height: 50px;
 	width: 75px;
+	margin-right: 7px;
 }
 
 #my-final-table tr:nth-child(even) {
-    background-color: #c6c6c6;
-    width:100%;
+  background-color: #c6c6c6;
+  width:100%;
 }
 
 
@@ -107,8 +97,8 @@ th {
 
 .panel-default > .panel-heading {
 	background-image: none;
-	background-color: #31458229;
-	color: #2260a5db;
+	background-color: #5d73b336;
+	color: #49494b;
 }
 
 .panel-title {
@@ -133,5 +123,4 @@ th {
 	margin-bottom: 10px;
 	text-transform: none;
 }
-
 
