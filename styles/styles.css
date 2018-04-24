@@ -6,14 +6,8 @@ body {
 			padding-top: 0px;
 			padding-bottom: 20px;
 		}
-    #my-final-table{
-      width:100% !IMPORTANT;
-    }
 	}
-#tableRow{
-  margin:0px 15px;
-  
-}
+
 .navbar {
 	border-radius: 0px;
 	min-height: 82px;
@@ -30,6 +24,7 @@ table {
 	margin-top: 30px;
 	margin-right: 10px;
 	margin-left: 10px;
+	display:block;
 }
 
 td, th {
@@ -42,9 +37,6 @@ td, th {
 
 th {
 	background: #001ba2;
-}
-#donateBtn{
-  float:right;
 }
 
 #example-ul, #ajax-ul {
@@ -61,12 +53,8 @@ th {
 	background: #001ba2;
 }
 
-#dynatable-processing-my-final-table{
-	min-width: 100% !important;
-}
-
 #dynatable-query-search-my-final-table {
-  
+  margin-right: 100px;
 }
 
 .bg-dark {
@@ -82,56 +70,6 @@ th {
 
 #my-final-table tr:nth-child(even) {
     background-color: #c6c6c6;
-    width:100%;
-}
-
-
-/* Styles for detail modal */
-
-#detailModal {
-	width: 100% !important;
-	height: 100% !important;
-	margin: 0;
-	padding: 0;
-}
-
-.modal-content {
-	height: auto !important;
-	min-height: 100% !important;
-	border-radius: 0;
-}
-
-#toyImage {
-	padding-bottom: 10px;	
-}
-
-.panel-default > .panel-heading {
-	background-image: none;
-	background-color: #31458229;
-	color: #2260a5db;
-}
-
-.panel-title {
-	font-size: 14px;
-	font-weight: 400;
-	margin-right: 5px;
-}
-
-.panel-title > i{
-	margin-right: 5px;
-}
-
-.panel-body {
-	font-size: 16px;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-#summary {
-	font-size: 14px;
-	font-weight: 400;
-	margin-bottom: 10px;
-	text-transform: none;
 }
 
 
