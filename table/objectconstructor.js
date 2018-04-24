@@ -18,6 +18,13 @@ let data2 = new parseFile.ConfigObj(function(data){
       
       // Update modal content
       $modal.find('h2').text(obj.name);
+      $modal.find('#manufacturer').text(obj.manufacturer);
+      $modal.find('#sensoryOutput').text(obj.sensory); 
+      $modal.find('#toyType').text(obj.toyType);
+      $modal.find('#instructions').text(obj.instructions);
+      $modal.find('#difficultyLevel').text(obj.difficultyLevel);
+      $modal.find('#keywords').text(obj.keywords);    
+      $modal.find('#Adapting Group').text(obj.adaptingGrouporPerson);    
       
       $('.detail-page').modal('show');
     });
