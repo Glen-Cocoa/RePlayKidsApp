@@ -36,8 +36,7 @@ var parseFile =(function(){
           "summary": originalObj["Summary"],
           "difficultyLevel": originalObj["Difficulty Level"],
           "comments": originalObj["Comments"],
-        
-          
+          "uniqueId": originalObj["unique id"]      
         });
       }
       return arr;
