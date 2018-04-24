@@ -61,6 +61,10 @@ th {
 	background: #001ba2;
 }
 
+#dynatable-processing-my-final-table{
+	min-width: 100% !important;
+}
+
 #dynatable-query-search-my-final-table {
   
 }
@@ -82,7 +86,7 @@ th {
 }
 
 
-/*Styles for detail modal*/
+/* Styles for detail modal */
 
 #detailModal {
 	width: 100% !important;
@@ -97,36 +101,37 @@ th {
 	border-radius: 0;
 }
 
-/* styles for the detail page */
-			#toyImage {
-				padding-bottom: 10px;	
-			}
-			
-			.panel-title {
-				font-size: 14px;
-				font-weight: 400;
-				margin-right: 5px;
-			}
-			
-			.panel-title > i{
-				margin-right: 5px;
-			}
-			
-			.panel-body {
-				font-size: 16px;
-				font-weight: 600;
-				text-transform: uppercase;
-			}
-			
-			#summary {
-				font-size: 14px;
-				font-weight: 400;
-				margin-bottom: 10px;
-				text-transform: none;
-			}
-			
-			#disqus {
-				margin-top: 30px;
-			}
+#toyImage {
+	padding-bottom: 10px;	
+}
+
+.panel-default > .panel-heading {
+	background-image: none;
+	background-color: #31458229;
+	color: #2260a5db;
+}
+
+.panel-title {
+	font-size: 14px;
+	font-weight: 400;
+	margin-right: 5px;
+}
+
+.panel-title > i{
+	margin-right: 5px;
+}
+
+.panel-body {
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#summary {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-transform: none;
+}
 
 
