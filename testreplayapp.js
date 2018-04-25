@@ -22,8 +22,8 @@ var parseFile =(function(){
       for(var i = 0; i < _this.recordArray.length; i++) {
         var originalObj = _this.recordArray[i];
         arr.push({
-          "name": originalObj["Toy name"],
-          "type": originalObj["Toy Type"],
+          "toyname": originalObj["Toy Name"],
+          "toytype": originalObj["Toy Type"],
           "instructions": originalObj["Instructions"],
           "sensory": originalObj["Sensory output type"],
           "manufacturer": originalObj["Manufacturer"],
