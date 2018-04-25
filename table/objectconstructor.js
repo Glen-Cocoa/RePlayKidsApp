@@ -5,7 +5,7 @@ let data2 = new parseFile.ConfigObj(function(data){
         records: good_data
       }
     });
-    $('#my-final-table tr').on('click', function(e) {
+    $('#my-final-table').on('click','tr', function(e) {
       var uid = $(this).find('td:first').text();
       var obj;
       for(var i = 0; i < good_data.length; i++) {
@@ -14,7 +14,7 @@ let data2 = new parseFile.ConfigObj(function(data){
           break;
         }
       }
-      var $modal = $('.detail-page');
+      var $modal = $('.detail-page').modal('show');
       
       // Update modal content
       $modal.find('h2').text(obj.name);
