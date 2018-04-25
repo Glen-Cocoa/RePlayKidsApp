@@ -22,10 +22,10 @@ var parseFile =(function(){
       for(var i = 0; i < _this.recordArray.length; i++) {
         var originalObj = _this.recordArray[i];
         arr.push({
-          "toyname": originalObj["Toy Name"],
-          "toytype": originalObj["Toy Type"],
+          "toyName": originalObj["Toy Name"],
+          "toyType": originalObj["Toy Type"],
           "instructions": originalObj["Instructions"],
-          "sensory": originalObj["Sensory output type"],
+          "sensory": originalObj["Sensory Type"],
           "manufacturer": originalObj["Manufacturer"],
           "photo": originalObj["Photo"],
           "instruction format": originalObj["Instruction Format"],
