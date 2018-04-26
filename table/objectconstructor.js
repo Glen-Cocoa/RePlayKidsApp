@@ -28,6 +28,5 @@ let data2 = new parseFile.ConfigObj(function(data){
       
       $('.detail-page').modal('show');
     });
-  
-    console.log(data.recordArray[0].Photo)
+ 
 });
