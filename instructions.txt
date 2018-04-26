@@ -1,3 +1,7 @@
+This program is hosted at https://github.com/Glen-Cocoa/RePlayKidsApp
+Download the zip file from the github (Big green button on the top right that says "Clone or Download" and host the files as you have hosted your pre-existing website
+To direct traffic to the page, simply link the location of the index.html page as you would any other page
+
 Google spreadsheet.
 Anything you put on your google spreadsheet will display on the website
 1.  Go to google
@@ -6,8 +10,8 @@ Anything you put on your google spreadsheet will display on the website
 4. Create spreadsheet
 5. go to file, hit publish for the web and then copy that url.
 6. go to notepad
-7. open testreplayapp.js file and paste the url next to the  KEY variable on top make sure you have ìî around your url.
-ie it should look something like KEY=îyour url hereî.
+7. open testreplayapp.js file and paste the url next to the  KEY variable on top make sure you have ‚Äú‚Äù around your url.
+ie it should look something like KEY=‚Äùyour url here‚Äù.
 
 
 Disqus 
