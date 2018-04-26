@@ -15,6 +15,9 @@ body {
 		}
     
 	}
+.label.label-primary{
+  margin:2px;
+}
 
 .navbar {
 	border-radius: 0px;
