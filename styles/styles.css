@@ -89,6 +89,10 @@ th {
   background-color: #c6c6c6;
 }
 
+#disqus_thread{
+  margin: 15px;
+}
+
 
 /* Styles for detail modal */
 
