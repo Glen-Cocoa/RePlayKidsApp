@@ -24,6 +24,7 @@ body {
 
 .navbar a,.navbar a:hover {
 	color: #ffffff;
+	text-shadow: none;
 }
 
 table {
@@ -89,6 +90,16 @@ th {
   background-color: #c6c6c6;
 }
 
+#submitButton {
+	background-image: -webkit-linear-gradient(#001ca2 0%, #02146d 100%);
+	background-image: -o-linear-gradient(#001ca2 0%, #02146d 100%);
+	background-image: linear-gradient(#001ca2 0%, #02146d 100%);	
+	margin-bottom: 20px;
+}
+
+#submitButton:hover, #submitButton:focus {
+	background-color: #000f54;
+}
 
 /* Styles for detail modal */
 
