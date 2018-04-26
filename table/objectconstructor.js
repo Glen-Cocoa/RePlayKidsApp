@@ -32,5 +32,4 @@ let data2 = new parseFile.ConfigObj(function(data){
       $('.detail-page').modal('show');
     
     });
-  
 });
