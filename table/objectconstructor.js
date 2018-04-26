@@ -5,7 +5,9 @@ let data2 = new parseFile.ConfigObj(function(data){
         records: good_data
       }
     });
-    $('#my-final-table').on('click','tr', function(e) {         
+    
+    
+    $('#my-final-table').on('click','tbody tr', function(e) {         
       var uid = $(this).find('td:first').text();
       console.log(good_data)
       var obj;
@@ -14,6 +16,7 @@ let data2 = new parseFile.ConfigObj(function(data){
           obj = good_data[i];
           break;
         }
+          
       }
         
         
