@@ -1,3 +1,10 @@
+th:nth-child(1){
+  display:none
+}
+td:nth-child(1){
+  display:none
+}
+
 body {
   padding-top: 0px;
 }
@@ -6,6 +13,7 @@ body {
 			padding-top: 0px;
 			padding-bottom: 20px;
 		}
+    
 	}
 
 .navbar {
@@ -25,7 +33,6 @@ table {
 	margin-top: 30px;
 	margin-right: 10px;
 	margin-left: 10px;
-	display:block;
 }
 
 td, th {
@@ -54,12 +61,12 @@ th {
 	background: #001ba2;
 }
 
-#dynatable-query-search-my-final-table {
-  margin-right: 100px;
-}
-
 .bg-dark {
   background-color: #001ba2;
+}
+
+#dynatable-pagination-links-my-final-table, #dynatable-record-count-my-final-table{
+  margin-top:10px;
 }
 
 #logo { 
@@ -70,9 +77,16 @@ th {
 	margin-right: 7px;
 }
 
+#tableRow {
+  margin:0px 10px 0px 0px;
+}
+
+#my-final-table{
+  width:100%;
+}
+
 #my-final-table tr:nth-child(even) {
   background-color: #c6c6c6;
-  width:100%;
 }
 
 

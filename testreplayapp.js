@@ -1,4 +1,4 @@
-var KEY = 'https://docs.google.com/spreadsheets/d/1dtMUq0qZvXBkplP2w-zleMOYxjyY6M7YcDwlz8uZS1k/edit?ts=5ab98793#gid=0'
+var KEY = 'https://docs.google.com/spreadsheets/d/1F6eJ1EAz10eyJtfQN4AhROjjrmRVBmeUe9bQrJkWAFc/edit?usp=sharing'
 
 var parseFile =(function(){
   var ConfigObj = function(callback){
@@ -22,16 +22,17 @@ var parseFile =(function(){
       for(var i = 0; i < _this.recordArray.length; i++) {
         var originalObj = _this.recordArray[i];
         arr.push({
+          "toyName": originalObj["Toy name"],
           "name": originalObj["Toy name"],
           "type": originalObj["Toy Type"],
           "instructions": originalObj["Instructions"],
-          "sensory": originalObj["Sensory output type"],
+          "sensoryType": originalObj["Sensory output type"],
           "manufacturer": originalObj["Manufacturer"],
           "photo": originalObj["Photo"],
-          "instruction format": originalObj["Instruction Format"],
+          "instructionType": originalObj["Instruction Format"],
           "toyType": originalObj["Toy Type"],
           "switchConnectionLocation": originalObj["Switch connection location"],
-          "adaptingGrouporPerson": originalObj["Adapting Group or Person"],
+          "adaptingGroup": originalObj["Adapting Group or Person"],
           "keywords": originalObj["Keywords"],
           "summary": originalObj["Summary"],
           "difficultyLevel": originalObj["Difficulty Level"],
