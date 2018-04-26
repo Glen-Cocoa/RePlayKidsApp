@@ -1,0 +1,21 @@
+Google spreadsheet.
+Anything you put on your google spreadsheet will display on the website
+1.  Go to google
+2. sign in
+3. go to google drive 
+4. Create spreadsheet
+5. go to file, hit publish for the web and then copy that url.
+6. go to notepad
+7. open testreplayapp.js file and paste the url next to the  KEY variable on top make sure you have “” around your url.
+ie it should look something like KEY=”your url here”.
+
+
+Disqus 
+1. go to disqus.com
+2. hit the login button
+3. log in with natalie email  and the password is 123456 (feel free to change the email)
+4. go to the settings (the gear on the upper right)
+5. in the drop down hit admin
+6. hit editing settings in the upper right
+7. click on the url
+8. put your website url in the website name box.  (DO NOT PUT IT IN THE WEBSITE URL BOX)

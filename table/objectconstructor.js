@@ -5,18 +5,14 @@ let data2 = new parseFile.ConfigObj(function(data){
         records: good_data
       }
     });
-    
-    
-    $('#my-final-table').on('click','tbody tr', function(e) {         
+     $('#my-final-table').on('click','tbody tr', function(e) {        
       var uid = $(this).find('td:first').text();
-      console.log(good_data)
       var obj;
       for(var i = 0; i < good_data.length; i++) {
         if(good_data[i]['uniqueId'] == uid) {
           obj = good_data[i];
           break;
         }
-          
       }
         
         
@@ -32,7 +28,21 @@ let data2 = new parseFile.ConfigObj(function(data){
       $modal.find('#link').text(obj.instructions)
       $modal.find('#link').attr('href',obj.instructions);        
       $modal.find('#difficultyLevel').text(obj.difficultyLevel);
-      $modal.find('#keywords').text(obj.keywords);    
+      $modal.find('h4').empty()
+      var keyWordString = obj.keywords
+      var keyWordArray = keyWordString.split(',')
+      function createKeywordPills(array){
+        for(var i=0;i<array.length;i++){
+          var label = array[i]
+          var pill = $("<span>", {"class": "label label-primary keyWordPills", text:label});
+          //pill.text = array[i]
+          console.log(pill)
+          $('#pillBox').append(pill)
+        }
+      }
+      createKeywordPills(keyWordArray)
+      $('.keyWordPills').css("display","inline-block")
+      //$modal.find('#keywords').text(obj.keywords);    
       $modal.find('#adaptingGroup').text(obj.adaptingGroup);    
       
       $('.detail-page').modal('show');

@@ -15,6 +15,9 @@ body {
 		}
     
 	}
+.label.label-primary{
+  margin:2px;
+}
 
 .navbar {
 	border-radius: 0px;
@@ -24,6 +27,7 @@ body {
 
 .navbar a,.navbar a:hover {
 	color: #ffffff;
+	text-shadow: none;
 }
 
 table {
@@ -91,6 +95,18 @@ th {
 
 #disqus_thread{
   margin: 15px;
+}
+
+
+#submitButton {
+	background-image: -webkit-linear-gradient(#001ca2 0%, #02146d 100%);
+	background-image: -o-linear-gradient(#001ca2 0%, #02146d 100%);
+	background-image: linear-gradient(#001ca2 0%, #02146d 100%);	
+	margin-bottom: 20px;
+}
+
+#submitButton:hover, #submitButton:focus {
+	background-color: #000f54;
 }
 
 
