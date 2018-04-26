@@ -22,9 +22,11 @@ let data2 = new parseFile.ConfigObj(function(data){
       // Update modal content
       $modal.find('h2').text(obj.name);      
       $modal.find('#manufacturer').text(obj.manufacturer);
+      $modal.find('#toyImage').attr('src', obj.photo)    
       $modal.find('#sensoryOutput').text(obj.sensoryType); 
       $modal.find('#toyType').text(obj.toyType);
-      $modal.find('#link').text(obj.instructions);        
+      $modal.find('#link').text(obj.instructions)
+      $modal.find('#link').attr('href',obj.instructions);        
       $modal.find('#difficultyLevel').text(obj.difficultyLevel);
       $modal.find('#keywords').text(obj.keywords);    
       $modal.find('#adaptingGroup').text(obj.adaptingGroup);    
