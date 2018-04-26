@@ -739,7 +739,8 @@
           spanWidth = $span.outerWidth(),
           $covered = obj.$element,
           offset = $covered.offset(),
-          height = $covered.outerHeight(), width = $covered.outerWidth();
+          height = $covered.outerHeight(), 
+          width = $covered.outerWidth();
 
       $processing
         .offset({left: offset.left, top: offset.top})
