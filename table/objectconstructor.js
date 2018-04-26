@@ -7,6 +7,7 @@ let data2 = new parseFile.ConfigObj(function(data){
     });
     $('#my-final-table').on('click','tr', function(e) {
       var uid = $(this).find('td:first').text();
+      console.log(good_data)
       var obj;
       for(var i = 0; i < good_data.length; i++) {
         if(good_data[i]['uniqueId'] == uid) {
@@ -29,5 +30,4 @@ let data2 = new parseFile.ConfigObj(function(data){
       $('.detail-page').modal('show');
     });
   
-    console.log(data.recordArray[0].Photo)
 });
