@@ -93,6 +93,11 @@ th {
   background-color: #c6c6c6;
 }
 
+#disqus_thread{
+  margin: 15px;
+}
+
+
 #submitButton {
 	background-image: -webkit-linear-gradient(#001ca2 0%, #02146d 100%);
 	background-image: -o-linear-gradient(#001ca2 0%, #02146d 100%);
@@ -103,6 +108,7 @@ th {
 #submitButton:hover, #submitButton:focus {
 	background-color: #000f54;
 }
+
 
 /* Styles for detail modal */
 
