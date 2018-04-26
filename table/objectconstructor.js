@@ -25,6 +25,7 @@ let data2 = new parseFile.ConfigObj(function(data){
       $modal.find('#toyImage').attr('src', obj.photo)    
       $modal.find('#sensoryOutput').text(obj.sensoryType); 
       $modal.find('#toyType').text(obj.toyType);
+      $modal.find('#instructionType').text(obj.instructionType);
       $modal.find('#link').text(obj.instructions)
       $modal.find('#link').attr('href',obj.instructions);        
       $modal.find('#difficultyLevel').text(obj.difficultyLevel);
